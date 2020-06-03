@@ -28,7 +28,12 @@ while True:
         motor_power = 50
     elif motor_power < -50:
         motor_power = -50
-
-    print('dist:{} power:{}'.format(dist, motor_power))
+    print('speed:{} dist:{}'.format(dist, motor_power))
+    
     motor_pair.start_at_power(motor_power)
     utime.sleep(0.1)
+
+
+
+
+
